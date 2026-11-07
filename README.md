@@ -1,27 +1,40 @@
-# Temperature Converter
+# 🌡️ Temperature Converter
 
-A simple desktop GUI app built with Python's `tkinter` that converts between Celsius and Fahrenheit.
+[![Python 3.x](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![GUI](https://img.shields.io/badge/GUI-Tkinter-brightgreen?style=flat-square)](https://docs.python.org/3/library/tkinter.html)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
-## Features
-- Convert Celsius → Fahrenheit
-- Convert Fahrenheit → Celsius
-- Lightweight GUI, no external dependencies
+A lightweight desktop GUI utility built with Python's built-in `tkinter` library that converts temperatures between Celsius and Fahrenheit with instantaneous input validation.
 
-## Requirements
-- Python 3.x (tkinter is included in the standard library on most systems)
+---
 
-## Usage
-Run the notebook `temperature_converter.ipynb` in Jupyter, or extract the code into a `.py` file and run:
+## ✨ Features
+
+- **Bidirectional Conversion**: Celsius to Fahrenheit and Fahrenheit to Celsius.
+- **Input Validation**: Gracefully handles non-numeric or empty input without crashing.
+- **Zero External Dependencies**: Uses the standard Python library (`tkinter`).
+
+---
+
+## 🚀 How to Run
+
+No third-party packages required. Ensure Python 3 is installed:
 
 ```bash
 python temperature_converter.py
 ```
 
-Enter a value in the corresponding field and click **Convert** to see the result.
+Or open `temperature_converter.ipynb` in your preferred Jupyter environment.
 
-## How it works
-- `c_to_f()` reads the Celsius entry, applies `(C * 9/5) + 32`, and displays the result.
-- `f_to_c()` reads the Fahrenheit entry, applies `(F - 32) * 5/9`, and displays the result.
+---
 
-## License
-MIT
+## 📐 Formulas
+
+- **Celsius → Fahrenheit**: $F = (C \times \frac{9}{5}) + 32$
+- **Fahrenheit → Celsius**: $C = (F - 32) \times \frac{5}{9}$
+
+---
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE).
